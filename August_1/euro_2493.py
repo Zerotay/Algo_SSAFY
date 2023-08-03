@@ -1,5 +1,6 @@
-# 2493 탑
+# 2493 탑 [골드 5]
 # https://www.acmicpc.net/problem/2493
+# 시간초과
 
 from sys import stdin
 
@@ -20,4 +21,4 @@ for i in range(N):
 
 print(" ".join(map(str, receives)))
 
-# 시간초과
+

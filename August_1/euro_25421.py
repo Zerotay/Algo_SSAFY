@@ -1,9 +1,10 @@
-# 25421번: 조건에 맞는 정수의 개수
+# 25421번: 조건에 맞는 정수의 개수 [실버 1]
 # https://www.acmicpc.net/problem/25421
+# 부분 성공
 
-import sys
+from sys import stdin
 
-n = int(sys.stdin.readline().rstrip())
+n = int(stdin.readline().rstrip())
 
 def count(num):
     digit = [1, 2, 3, 4, 5, 6, 7, 8, 9]

@@ -1,5 +1,6 @@
-# 2533 사회망 서비스(SNS)
+# 2533 사회망 서비스(SNS) [골드 3]
 # https://www.acmicpc.net/problem/2533
+# 실패
 
 from sys import stdin
 

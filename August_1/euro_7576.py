@@ -1,9 +1,13 @@
-import sys
+# 7576번: 토마토 [골드 5]
+# https://www.acmicpc.net/problem/7576
+# 시간 초과
 
-M, N = map(int, sys.stdin.readline().rstrip().split())
+from sys import stdin
+
+M, N = map(int, stdin.readline().rstrip().split())
 
 direction = [[-1, 0], [1, 0], [0, 1], [0, -1]]
-arr = [sys.stdin.readline().rstrip().split() for _ in range(N)]
+arr = [stdin.readline().rstrip().split() for _ in range(N)]
 
 count = 0
 for i in range(N):
@@ -39,6 +43,3 @@ if count != 0:
     print(-1)
 else:
     print(day)
-
-
-
