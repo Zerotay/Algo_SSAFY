@@ -1,5 +1,5 @@
-# 14411 합집합 (G4)
-# https://www.acmicpc.net/problem/14411
+# 16938 캠프 준비 (G5)
+# https://www.acmicpc.net/problem/16938
 # 성공
 
 import sys
