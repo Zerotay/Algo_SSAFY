@@ -1,32 +1,28 @@
 # 14411 합집합 (G4)
 # https://www.acmicpc.net/problem/14411
-# 성공
+# 시간 초과
 
 import sys
 input = sys.stdin.readline
 
-N, L, R, X = map(int, input().split())
-problems = input().split()
-isSelected = [False] * N
-count = 0
+n = int(input())
+arr = []
+for i in range(n):
+    x, y = map(int, input().split())
+    arr.append([int(x/2), int(y/2)])
 
-def subset(cnt):
-    global count
-    if cnt == N:
-        arr = []
-        sum = 0
-        for i in range(N):
-            if (isSelected[i]):
-                arr.append(int(problems[i]))
-                sum += int(problems[i])
-        if (sum >= L and sum <= R) and (max(arr) - min(arr) >= X) and len(arr) >= 2:
-            count += 1
-        return
+sortedArr = sorted(arr, key=lambda i: (i[0]))
 
-    isSelected[cnt] = True
-    subset(cnt+1)
-    isSelected[cnt] = False
-    subset(cnt+1)
+sum = 0
+for i in range(n):
+    max = sortedArr[i][1]
+    for j in range(n):
+        if sortedArr[i][0] <= sortedArr[j][0] and sortedArr[j][1] > max:
+            max = sortedArr[j][1] 
+    if i == 0:
+        sum += sortedArr[i][0] * max
+    else:
 
-subset(0)
-print(count)
+        sum += (sortedArr[i][0] - sortedArr[i-1][0]) * max
+
+print(sum * 4)
