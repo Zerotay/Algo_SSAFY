@@ -1,4 +1,6 @@
-import copy,sys
+#시간복잡도 n->dfs에서 n까지만 접근(나눠지지 않음) 
+
+import sys
 sys.setrecursionlimit=10**6
 n = int(input())
 
