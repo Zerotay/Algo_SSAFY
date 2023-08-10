@@ -1,6 +1,6 @@
 # 16638 괄호 추가하기 2 (G1)
 # https://www.acmicpc.net/problem/16638
-# 
+# 실패 (예제 6 실패)
 
 import sys
 input = sys.stdin.readline
