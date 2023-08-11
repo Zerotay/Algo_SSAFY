@@ -20,7 +20,14 @@
 |16638|괄호 추가하기 2|G1|https://www.acmicpc.net/problem/16638|
 |14411|합집합|G4|https://www.acmicpc.net/problem/14411|
 	
-
+### 3주차 [출제자: 조권호] (8/11 ~ 8/17)
+|문제번호|제목|난이도|링크|
+|---|---|---|---|
+|2661|좋은 수열|G4|https://www.acmicpc.net/problem/2661|
+|13549|숨바꼭질 3|G5|https://www.acmicpc.net/problem/13549|
+|14719|빗물|G5|https://www.acmicpc.net/problem/14719|
+|11559|Puyo Puyo|G4|https://www.acmicpc.net/problem/11559|
+|1194|달이 차오른다, 가자.|G1|https://www.acmicpc.net/problem/1194|
 
 
 ## 디렉토리 구조
