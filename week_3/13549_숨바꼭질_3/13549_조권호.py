@@ -1,3 +1,5 @@
+# 0-1 BFS
+
 import collections
 
 n,k = map(int,input().split())
