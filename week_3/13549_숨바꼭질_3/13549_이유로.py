@@ -9,13 +9,12 @@ input = sys.stdin.readline
 n, k = map(int, input().split())
 
 queue = deque([[5, 0]])
+current = queue.popleft()
 
-while(len(queue) > 0):
-    current = queue.popleft()
-    if (current[0] == k):
-        print(current[1])
-        break
-
+while(current[0] != k):
     queue.append([current[0]*2, current[1]])
     queue.append([current[0]+1, current[1]+1])
     queue.append([current[0]-1, current[1]+1])
+    current = queue.popleft()
+
+print(current[1])
