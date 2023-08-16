@@ -2,17 +2,19 @@ h,w = map(int,input().split())
 block = list(map(int,input().split()))
 
 ans=0
-ptr=0
-stk=[]
-for i in range(1, w):
-    if block[i]>=block[ptr]:
-        while stk:
-            ans+=block[ptr]-stk.pop()
-        ptr = i
+ptr1=0
+ptr2 = w-1
+left = block[ptr1]
+right = block[ptr2]
+
+while ptr1<=ptr2:
+    left = max(left, block[ptr1])
+    right = max(right, block[ptr2])
+
+    if left<=right:
+        ans += left - block[ptr1]
+        ptr1+=1
     else:
-        stk.append(block[i])
-if stk:
-    max_stk = max(stk)
-    for s in stk:
-        ans+=max_stk-s
+        ans += right - block[ptr2]
+        ptr2-=1
 print(ans)
