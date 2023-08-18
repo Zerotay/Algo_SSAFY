@@ -29,7 +29,14 @@
 |11559|Puyo Puyo|G4|https://www.acmicpc.net/problem/11559|
 |1194|달이 차오른다, 가자.|G1|https://www.acmicpc.net/problem/1194|
 
-
+### 4주차 [출제자: 김동건] (8/18 ~ 8/24)
+|문제번호|제목|난이도|링크|
+|---|---|---|---|
+|1941|소문난 칠공주|G3|https://www.acmicpc.net/problem/1941|
+|20058|마법사 상어와 파이어스톰|G3|https://www.acmicpc.net/problem/20058|
+|2357|최솟값과 최댓값|G1|https://www.acmicpc.net/problem/2357|
+|2225|합분해|G5|https://www.acmicpc.net/problem/2225|
+|28709|와일드카드 괄호 문자열|G1|https://www.acmicpc.net/problem/28709|
 ## 디렉토리 구조
 ```
 week_[주차]
