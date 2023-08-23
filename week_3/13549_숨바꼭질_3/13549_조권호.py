@@ -1,5 +1,4 @@
 # 0-1 BFS
-
 import collections
 
 n,k = map(int,input().split())
@@ -16,9 +15,11 @@ def bfs(x):
         if x==k:
             return cnt
         for i in [x-1, x+1, 2*x]:
+            if i>100000 or i<0:
+                continue
             if not visit[i]:
                 if i==2*x:
-                    q.append((i,cnt))
+                    q.appendleft((i,cnt))
                     visit[i]=1
                 else:
                     q.append((i,cnt+1))
