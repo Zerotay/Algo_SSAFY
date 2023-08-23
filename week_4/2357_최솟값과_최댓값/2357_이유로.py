@@ -14,6 +14,4 @@ for _ in range(n):
 
 for _ in range(m):
     a, b = map(int, input().split())
-    print(min(arr[a-1:b]), end="")
-    print(" ", end="")
-    print(max(arr[a-1:b]))
+    print(min(arr[a-1:b]), max(arr[a-1:b]))
