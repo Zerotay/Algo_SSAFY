@@ -1,10 +1,9 @@
 # 20058 마법사 상어와 파이어스톰 (G3)
 # https://www.acmicpc.net/problem/20058
-# 시간초과
+# 성공
 
 import sys
 from collections import deque
-import copy
 input = sys.stdin.readline
 
 direction = [[-1, 0], [1, 0], [0, 1], [0, -1]]
@@ -12,23 +11,21 @@ n, q = map(int, input().split(' '))
 totalSize = pow(2, n)
 a = [[*map(int, input().split(' '))] for _ in range(totalSize)]
 
-def turn(startI, endI, startJ, endJ, original):
+def turn(startI, endI, startJ, endJ):
     global totalSize
-    arr = [[*original[i][:]] for i in range(totalSize)]
-    # arr = copy.deepcopy(original)
+    global a
     newArr = []
     size = endI - startI
     for i in range(size):
         row = []
         for j in range(size):
-            row.append(arr[endI - 1 - j][startJ + i])
+            row.append(a[endI - 1 - j][startJ + i])
         newArr.append(row)
 
     for i in range(size):
         for j in range(size):
-            arr[i + startI][j + startJ] = newArr[i][j]
+            a[i + startI][j + startJ] = newArr[i][j]
     
-    return arr
 
 def magic(arr):
     global direction
@@ -62,7 +59,7 @@ for l in [*map(int, input().split(' '))]:
     if l != 0:
         while(i < totalSize):
             while(j < totalSize):
-                a = turn(i, i+size, j, j+size, a)
+                turn(i, i+size, j, j+size)
                 j += size
             j = 0
             i += size
