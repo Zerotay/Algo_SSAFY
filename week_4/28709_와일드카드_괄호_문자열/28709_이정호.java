@@ -1,3 +1,7 @@
+// 28709 와일드카드 괄호 문자열 (G1)
+// https://www.acmicpc.net/problem/28709
+// 정답
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

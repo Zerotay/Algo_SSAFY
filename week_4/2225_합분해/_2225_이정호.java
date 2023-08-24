@@ -1,3 +1,7 @@
+// 2225 합분해 (G5)
+// https://www.acmicpc.net/problem/2225
+// 정답
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

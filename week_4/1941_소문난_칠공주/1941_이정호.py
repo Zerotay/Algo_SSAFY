@@ -1,3 +1,7 @@
+# 1941 소문난 칠공주 (G3)
+# https://www.acmicpc.net/problem/1941
+# 정답
+
 import sys
 input = sys.stdin.readline
 
