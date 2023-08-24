@@ -1,4 +1,6 @@
 import collections
+import sys
+input = sys.stdin.readline
 
 dx = [0,0,-1,1]
 dy = [-1,1,0,0]
@@ -12,6 +14,7 @@ def rotate(x,y, size):
     for i in range(size):
         for j in range(size):
             board[x+i][y+j] = tmp[x+i][y+j]
+
 
 def reduce():
     global board
@@ -28,6 +31,7 @@ def reduce():
                     continue
                 if(board[nx][ny]>0):
                     cnt+=1
+            # print(cnt)
             if(cnt<3):
                 tmp.append((i,j))
                 # print(i, j)
@@ -46,17 +50,15 @@ def bfs(x,y):
         for i in range(4):
             nx = x+dx[i]
             ny = y+dy[i]
-            if(nx<0 or ny<0 or nx>=(1<<n) or ny >=(1<<n) or visited[nx][ny]):
-                continue
-            if(board[nx][ny]==0):
+            if(nx<0 or ny<0 or nx>=(1<<n) or ny >=(1<<n) or visited[nx][ny] or board[nx][ny]==0):
                 continue
             q.append((nx,ny))
             visited[nx][ny]=True
             tmp+=1
     big = max(big, tmp)
 
-n ,q = map(int,input().split())
 
+n ,q = map(int,input().split())
 board=[]
 for _ in range(1<<n):
     board.append(list(map(int,input().split())))
@@ -72,6 +74,7 @@ for le in l:
             j+=width
         i+=width
         j=0
+    reduce()
 # print(board)
 
 ice =0
@@ -82,6 +85,6 @@ for i in range(1<<n):
     for j in range(1<<n):
         ice+=board[i][j]
         if(not visited[i][j] and board[i][j]!=0):
-           bfs(i,j)
+            bfs(i,j)
 print(ice)
 print(big)
