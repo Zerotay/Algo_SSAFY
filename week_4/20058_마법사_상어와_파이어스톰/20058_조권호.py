@@ -7,13 +7,13 @@ dy = [-1,1,0,0]
 
 def rotate(x,y, size):
     global board
-    tmp = [[-1]*(1<<n) for _ in range(1<<n)]
+    tmp = [[-1]*size for _ in range(size)]
     for xx in range(size):
         for yy in range(size):
-            tmp[x+yy][y+size-xx-1] = board[x+xx][y+yy]
+            tmp[yy][size-xx-1] = board[x+xx][y+yy]
     for i in range(size):
         for j in range(size):
-            board[x+i][y+j] = tmp[x+i][y+j]
+            board[x+i][y+j] = tmp[i][j]
 
 
 def reduce():
