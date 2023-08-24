@@ -68,7 +68,8 @@ for le in l:
     width = 1<<le
     i=0
     j=0
-    while i< (1<<n):
+    
+    while le!=0 and i< (1<<n):
         while j< (1<<n):
             rotate(i,j,width)
             j+=width
