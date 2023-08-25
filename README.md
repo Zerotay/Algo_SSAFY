@@ -37,6 +37,22 @@
 |2357|최솟값과 최댓값|G1|https://www.acmicpc.net/problem/2357|
 |2225|합분해|G5|https://www.acmicpc.net/problem/2225|
 |28709|와일드카드 괄호 문자열|G1|https://www.acmicpc.net/problem/28709|
+
+### 5주차 [출제자: 이유로] (8/25 ~ 8/31)
+|문제번호|제목|난이도|링크|
+|---|---|---|---|
+|1092|배|G5|https://www.acmicpc.net/problem/1092|
+|1103|게임|G2|https://www.acmicpc.net/problem/1103|
+|2268|수들의 합 7|G1|https://www.acmicpc.net/problem/2268|
+|1451|직사각형으로 나누기|G4|https://www.acmicpc.net/problem/1451|
+|1238|파티|G3|https://www.acmicpc.net/problem/1238|
+
+배 (골드 5) 1092
+게임 (골드 2) 1103
+수들의 합 7 (골드 1) 2268
+직사각형으로 나누기 (골드 4) 1451
+파티 (골드 3) 1238
+
 ## 디렉토리 구조
 ```
 week_[주차]
