@@ -1,3 +1,6 @@
+// 1238 게임 (G3)
+// https://www.acmicpc.net/problem/1238
+// 성공
 package BOJ;
 
 import java.io.BufferedReader;
