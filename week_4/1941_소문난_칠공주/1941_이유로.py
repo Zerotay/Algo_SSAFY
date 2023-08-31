@@ -7,7 +7,7 @@ from collections import deque
 
 input = sys.stdin.readline
 
-direction = [[1, 0], [0, 1]]
+direction = [[1, 0], [0, 1], [-1, 0], [0, -1]]
 
 result = 0
 arr = []
@@ -49,25 +49,28 @@ def isValid(i, j):
         
 
 
-def dfs(i, j, count, visited, sCount):
+def dfs(i, j, count, sCount, history):
     global result
+    global saved
 
     if (count - sCount > 3):
-        return [count, visited, sCount]
+        return
     elif (count == 7):
-        print(i, j)
-        result += 1
+        if sorted(history) not in saved:
+            result += 1
+            saved.append(sorted(history))
         return
     for d in direction:
         newI = i+d[0]
         newJ = j+d[1]
-        if (isValid(newI, newJ) and not visited[newI][newJ]):
-            visited[newI][newJ] = True
-            dfs(newI, newJ, count+1, visited, sCount+1 if arr[newI][newJ] == 'S' else sCount)
-            visited[newI][newJ] = False
+        if (isValid(newI, newJ) and [newI, newJ] not in history):
+            dfs(newI, newJ, count+1, sCount+1 if arr[newI][newJ] == 'S' else sCount, [*history, [newI, newJ]])
 
+saved = []
 for i in range(5):
     for j in range(5):
-        dfs(i, j, 1, [[False] * 5 for _ in range(5)], 1 if arr[i][j] == 'S' else 0)
+        dfs(i, j, 1, 1 if arr[i][j] == 'S' else 0, [[i, j]])
 
+for s in saved:
+    print(s)
 print(result)
