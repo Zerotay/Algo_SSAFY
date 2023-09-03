@@ -1,0 +1,101 @@
+package BOJ.dijk;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.PriorityQueue;
+
+public class Main_18352_S2_특정거리의도시찾기 {
+	static class Node implements Comparable<Node> {
+		int v, weight;
+
+		public Node(int v, int weight) {
+			this.v = v;
+			this.weight = weight;
+		}
+
+		@Override
+		public int compareTo(Node o) {
+			return Integer.compare(this.weight, o.weight);
+		}
+	}
+
+	private static final int INF = Integer.MAX_VALUE;
+	static int N, M, K, X;
+	static List<Node>[] list;
+
+	public static void main(String[] args) throws Exception {
+		N = read(); // 정점 수
+		M = read(); // Edge 수
+		K = read();
+		X = read(); // 시작 정점
+
+		list = new ArrayList[N + 1];
+
+		for (int i = 0; i <= N; i++) {
+			list[i] = new ArrayList<>();
+		}
+
+		// 출발 도착 가중치
+		int u, v;
+		for (int i = 0; i < M; i++) {
+			u = read();
+			v = read();
+			list[u].add(new Node(v, 1));
+		}
+		int[] dist1 = dijkstra(list);
+		// 다익스트라 알고리즘
+		boolean flag = true;
+		for (int i = 1; i <= N; i++) {
+			if (K == dist1[i]) {
+				System.out.println(i);
+				flag = false;
+			}
+		}
+		if(flag) System.out.println(-1);
+	}
+
+	static int[] dijkstra(List<Node>[] list) {
+		PriorityQueue<Node> queue = new PriorityQueue<>();
+		int[] dist = new int[N + 1];
+		Arrays.fill(dist, INF);
+		// 선택배열
+		boolean[] check = new boolean[N + 1];
+		// 도착 노드를 pq에 삽입
+		queue.add(new Node(X, 0));
+		// 도착 노드까지의 거리는 0
+		dist[X] = 0;
+
+		while (!queue.isEmpty()) {
+			// 하나 꺼내서
+			Node curNode = queue.poll();
+			// 정점
+			int cur = curNode.v;
+			// 이 이미 선택됐다면
+			if (check[cur])
+				continue;
+			// 선택한걸로 치고
+			check[cur] = true;
+			// 여기서 출발해서 도착할 수 있는 모든 정점들에 대해서
+			for (Node node : list[cur]) {
+				// 이미 알고 있는 거리보다 더 가깝게 도달할 수 있다면
+				if (dist[node.v] > dist[cur] + node.weight) {
+					// 거리 갱신하고
+					dist[node.v] = dist[cur] + node.weight;
+					queue.add(new Node(node.v, dist[node.v]));
+				}
+			}
+		}
+		return dist;
+	}
+
+	private static int read() throws Exception {
+
+		int c, n = System.in.read() & 15;
+		while ((c = System.in.read()) > 32)
+			n = (n << 3) + (n << 1) + (c & 15);
+		if (c == 13)
+			System.in.read();
+		return n;
+	}
+}
