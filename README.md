@@ -50,7 +50,7 @@
 ### 6주차 [출제자: 이정호] (9/1 ~ 9/7)
 |문제번호|제목|난이도|링크|
 |---|---|---|---|
-|12442|약속장소 정하기 (Large)|G4|https://www.acmicpc.net/problem/12242|
+|12442|약속장소 정하기 (Large)|G4|https://www.acmicpc.net/problem/12442|
 |18352|특정 거리의 도시 찾기|S2|https://www.acmicpc.net/problem/18352|
 |1446|지름길|S1|https://www.acmicpc.net/problem/1446|
 |12881|Distance|P5|https://www.acmicpc.net/problem/12881|
