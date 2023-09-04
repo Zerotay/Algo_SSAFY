@@ -1,6 +1,6 @@
 // 18352 특정거리의_도시_찾기 (S2)
 // https://www.acmicpc.net/problem/18352
-// N = 300,000이므로 방문 체크를 해주면 큐를 이용해 dfs처럼 구해도 충분
+// N = 300,000이므로 방문 체크를 해주면 큐를 이용해 bfs에 깊이를 카운트해서 구해도 충분
 
 import java.io.BufferedReader;
 import java.io.IOException;
