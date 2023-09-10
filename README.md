@@ -55,6 +55,15 @@
 |1446|지름길|S1|https://www.acmicpc.net/problem/1446|
 |12881|Distance|P5|https://www.acmicpc.net/problem/12881|
 
+### 7주차 [출제자: 조권호] (9/8 ~ 9/14)
+|문제번호|제목|난이도|링크|
+|---|---|---|---|
+|5557|1학년|G5|https://www.acmicpc.net/problem/5557|
+|11058|크리보드|G5|https://www.acmicpc.net/problem/11058|
+|9935|문자열 폭발|G4|https://www.acmicpc.net/problem/9935|
+|16197|두 동전|G4|https://www.acmicpc.net/problem/16197|
+|6987|월드컵|G4|https://www.acmicpc.net/problem/6987|
+
 ## 디렉토리 구조
 ```
 week_[주차]
