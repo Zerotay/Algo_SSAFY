@@ -1,3 +1,7 @@
+# 12442 약속장소 정하기 (Large) (G4)
+# https://www.acmicpc.net/problem/12442
+# 정답
+
 import sys
 from collections import defaultdict
 import heapq as hq
@@ -37,6 +41,15 @@ for t in range(int(input())):
         for i in range(n):
             anslst[i] = max(anslst[i], least[i] * speed)
     ans = min(anslst)
-    # print(anslst)
     print(f"Case #{t+1}: {ans if ans < 2147483648 else -1}")
-    # print(adjlst)
+
+# 최단경로 찾기 문제
+# 저번 주 문제와 유사함
+
+# 접근 1
+# 도로가 어떻게 깔려있는지에 대한 정확하 정보가 주어지지 않기에
+# 그리디한 접근 방식은 불가능
+# 그럼 각 사람들이 각 노드에 가는 최단 경로를 구해보자
+# 노드는 만 개애지만 사람이 100명 이하이므로 대충 시간 상 무리는 없을 듯
+# 각 사람이 걸리는 이동 시간은 나중에 곱하는 것으로 한다.
+# 성공
