@@ -6,7 +6,7 @@ import sys
 input = sys.stdin.readline
 
 '''
-시간초과 왜?
+시간초과 => 문자열 슬라이싱이 O(N) 소모
 str = input().rstrip()
 bomb = input().rstrip()
 str_len = len(str)
