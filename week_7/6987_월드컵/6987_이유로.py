@@ -1,6 +1,6 @@
 # 6987 월드컵 (G4)
 # https://www.acmicpc.net/problem/6987
-# 
+# 실패
 
 import sys
 import copy
