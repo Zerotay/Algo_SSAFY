@@ -71,6 +71,14 @@
 | 16197    | 두 동전     | G4     | https://www.acmicpc.net/problem/16197 |
 | 6987     | 월드컵      | G4     | https://www.acmicpc.net/problem/6987  |
 
+### 8주차 [출제자: 김동건] (9/22 ~ 9/27)
+
+| 문제번호 | 제목        | 난이도 | 링크                                  |
+| -------- | ----------- | ------ | ------------------------------------- |
+| 9095     | 1,2,3 더하기       | S3     | https://www.acmicpc.net/problem/9095  |
+| 16724    | 피리 부는 사나이    | G3     | https://www.acmicpc.net/problem/16724 |
+| 27172     | 수 나누기 게임 | G5     | https://www.acmicpc.net/problem/27172  |
+
 ## 디렉토리 구조
 
 ```
