@@ -86,6 +86,15 @@
 | 2170     | 선 긋기       | G5     | https://www.acmicpc.net/problem/2170  |
 | 2294    | 동전 2    | G5     | https://www.acmicpc.net/problem/2294 |
 
+### 10주차 [출제자: 김동건] (10/06 ~ 10/12)
+
+| 문제번호 | 제목        | 난이도 | 링크                                  |
+| -------- | ----------- | ------ | ------------------------------------- |
+| 2313     | 보석 구매하기       | S1     | https://www.acmicpc.net/problem/2313  |
+| 1701     |  Cubeditor    | G3     | https://www.acmicpc.net/problem/1701 |
+| 1106     | 호텔       | G5     | https://www.acmicpc.net/problem/1106  |
+| 11568    | 민균이의 계략    | G5     | https://www.acmicpc.net/problem/11568 |
+
 ## 디렉토리 구조
 
 ```
