@@ -93,7 +93,7 @@
 | 2313     | 보석 구매하기       | S1     | https://www.acmicpc.net/problem/2313  |
 | 1701     |  Cubeditor    | G3     | https://www.acmicpc.net/problem/1701 |
 | 1106     | 호텔       | G5     | https://www.acmicpc.net/problem/1106  |
-| 11568    | 민균이의 계략    | G5     | https://www.acmicpc.net/problem/11568 |
+| 11568    | 민균이의 계략    | S2     | https://www.acmicpc.net/problem/11568 |
 
 ## 디렉토리 구조
 
