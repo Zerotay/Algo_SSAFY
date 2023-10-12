@@ -22,18 +22,13 @@ for i in range(n):
     sums.append(sum)
     idx.append(c)
 
-  result = [-1, -1, -1000]
+  result = [-1, -1, -10000]
   combi = list(combinations(idx, 2))
   for a, b in combi:
-    if result[2] < sums[b] - sums[a]:
+    if result[2] < sums[b] - sums[a] or (result[2] == sums[b] - sums[a] and  b-a < result[1]-result[0]):
       result[0] = a + 1
       result[1] = b
       result[2] = sums[b] - sums[a]
-    elif result[2] == sums[b] - sums[a]:
-      if b-a < result[1]-result[0]:
-        result[0] = a + 1
-        result[1] = b
-        result[2] = sums[b] - sums[a]
   
   answer += result[2]
   answers.append(str(result[0]) + " " + str(result[1]))
