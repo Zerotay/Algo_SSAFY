@@ -95,6 +95,16 @@
 | 1106     | 호텔       | G5     | https://www.acmicpc.net/problem/1106  |
 | 11568    | 민균이의 계략    | S2     | https://www.acmicpc.net/problem/11568 |
 
+### 11주차 [출제자: 이정호] (10/13 ~ 10/19)
+
+| 문제번호 | 제목        | 난이도 | 링크                                  |
+| -------- | ----------- | ------ | ------------------------------------- |
+| 14500    | 테트로미노       | G4     | https://www.acmicpc.net/problem/14500  |
+| 18870    | 좌표 압축    | S2     | https://www.acmicpc.net/problem/18870 |
+| 20529    | 가장 가까운 세 사람의 심리적 거리    | S1     | https://www.acmicpc.net/problem/20529  |
+| 30190    | 여우의 꿈    | G5     | https://www.acmicpc.net/problem/30190 |
+
+
 ## 디렉토리 구조
 
 ```
