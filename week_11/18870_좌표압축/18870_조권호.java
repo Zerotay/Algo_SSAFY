@@ -1,4 +1,9 @@
 import java.io.BufferedReader;
+// 18870 좌표압축 (S2)
+// https://www.acmicpc.net/problem/18870
+// 정답
+
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
