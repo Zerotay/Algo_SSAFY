@@ -108,10 +108,10 @@
 
 | 문제번호 | 제목        | 난이도 | 링크                                  |
 | -------- | ----------- | ------ | ------------------------------------- |
-| 14500    | 미친 로봇       | G4     | https://www.acmicpc.net/problem/1405  |
-| 18870    | 앱    | G3     | https://www.acmicpc.net/problem/7579 |
-| 20529    | 이모티콘    | G4     | https://www.acmicpc.net/problem/14226  |
-| 30190    | 나무 자르기    | S2     | https://www.acmicpc.net/problem/2805 |
+| 1405    | 미친 로봇       | G4     | https://www.acmicpc.net/problem/1405  |
+| 7579    | 앱    | G3     | https://www.acmicpc.net/problem/7579 |
+| 14226     | 이모티콘    | G4     | https://www.acmicpc.net/problem/14226  |
+| 2805    | 나무 자르기    | S2     | https://www.acmicpc.net/problem/2805 |
 
 ## 디렉토리 구조
 
