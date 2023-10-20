@@ -104,6 +104,14 @@
 | 20529    | 가장 가까운 세 사람의 심리적 거리    | S1     | https://www.acmicpc.net/problem/20529  |
 | 30190    | 여우의 꿈    | G5     | https://www.acmicpc.net/problem/30190 |
 
+### 12주차 [출제자: 조권호] (10/20 ~ 10/26)
+
+| 문제번호 | 제목        | 난이도 | 링크                                  |
+| -------- | ----------- | ------ | ------------------------------------- |
+| 1405    | 미친 로봇       | G4     | https://www.acmicpc.net/problem/1405  |
+| 7579    | 앱    | G3     | https://www.acmicpc.net/problem/7579 |
+| 14226     | 이모티콘    | G4     | https://www.acmicpc.net/problem/14226  |
+| 2805    | 나무 자르기    | S2     | https://www.acmicpc.net/problem/2805 |
 
 ## 디렉토리 구조
 
