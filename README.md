@@ -104,7 +104,7 @@
 | 20529    | 가장 가까운 세 사람의 심리적 거리    | S1     | https://www.acmicpc.net/problem/20529  |
 | 30190    | 여우의 꿈    | G5     | https://www.acmicpc.net/problem/30190 |
 
-### 12~13주차 [출제자: 조권호] (10/20 ~ 11/03)
+### 12~14주차 [출제자: 조권호] (10/20 ~ 11/12)
 
 | 문제번호 | 제목        | 난이도 | 링크                                  |
 | -------- | ----------- | ------ | ------------------------------------- |
@@ -112,6 +112,16 @@
 | 7579    | 앱    | G3     | https://www.acmicpc.net/problem/7579 |
 | 14226     | 이모티콘    | G4     | https://www.acmicpc.net/problem/14226  |
 | 2805    | 나무 자르기    | S2     | https://www.acmicpc.net/problem/2805 |
+
+### 15주차 [출제자: 김동건] (11/13 ~ 11/20)
+
+| 문제번호 | 제목        | 난이도 | 링크                                  |
+| -------- | ----------- | ------ | ------------------------------------- |
+| 2933    | 미네랄       | G1     | https://www.acmicpc.net/problem/2933  |
+| 1976    | 여행 가자    | G4     | https://www.acmicpc.net/problem/1976 |
+| 18427     | 함께 블록 쌓기    | G4     | https://www.acmicpc.net/problem/18427  |
+| 10800    | 컬러볼    | G2     | https://www.acmicpc.net/problem/10800 |
+| 2138    | 전구와 스위치    | G5     | https://www.acmicpc.net/problem/2138 |
 
 ## 디렉토리 구조
 
